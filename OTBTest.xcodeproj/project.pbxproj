@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		476F42D21E55053400A00FFB /* Hotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F42C91E55053400A00FFB /* Hotel.swift */; };
+		476F42D31E55053400A00FFB /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F42CB1E55053400A00FFB /* Request.swift */; };
+		476F42D41E55053400A00FFB /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F42CC1E55053400A00FFB /* Session.swift */; };
+		476F42D51E55053400A00FFB /* HotelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F42CE1E55053400A00FFB /* HotelViewController.swift */; };
+		476F42D61E55053400A00FFB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F42CF1E55053400A00FFB /* SearchViewController.swift */; };
+		476F42D71E55053400A00FFB /* HotelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F42D11E55053400A00FFB /* HotelViewModel.swift */; };
 		47B6FD341E4BA9D800A6EE6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B6FD331E4BA9D800A6EE6A /* AppDelegate.swift */; };
-		47B6FD361E4BA9D800A6EE6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B6FD351E4BA9D800A6EE6A /* ViewController.swift */; };
 		47B6FD391E4BA9D800A6EE6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47B6FD371E4BA9D800A6EE6A /* Main.storyboard */; };
 		47B6FD3B1E4BA9D800A6EE6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47B6FD3A1E4BA9D800A6EE6A /* Assets.xcassets */; };
 		47B6FD3E1E4BA9D800A6EE6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47B6FD3C1E4BA9D800A6EE6A /* LaunchScreen.storyboard */; };
@@ -26,9 +31,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		476F42C91E55053400A00FFB /* Hotel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hotel.swift; sourceTree = "<group>"; };
+		476F42CB1E55053400A00FFB /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		476F42CC1E55053400A00FFB /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		476F42CE1E55053400A00FFB /* HotelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelViewController.swift; sourceTree = "<group>"; };
+		476F42CF1E55053400A00FFB /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		476F42D11E55053400A00FFB /* HotelViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelViewModel.swift; sourceTree = "<group>"; };
 		47B6FD301E4BA9D800A6EE6A /* OTBTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTBTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47B6FD331E4BA9D800A6EE6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		47B6FD351E4BA9D800A6EE6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		47B6FD381E4BA9D800A6EE6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		47B6FD3A1E4BA9D800A6EE6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47B6FD3D1E4BA9D800A6EE6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +66,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		476F42C81E55053400A00FFB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				476F42C91E55053400A00FFB /* Hotel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		476F42CA1E55053400A00FFB /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				476F42CB1E55053400A00FFB /* Request.swift */,
+				476F42CC1E55053400A00FFB /* Session.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		476F42CD1E55053400A00FFB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				476F42CE1E55053400A00FFB /* HotelViewController.swift */,
+				476F42CF1E55053400A00FFB /* SearchViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		476F42D01E55053400A00FFB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				476F42D11E55053400A00FFB /* HotelViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		47B6FD271E4BA9D700A6EE6A = {
 			isa = PBXGroup;
 			children = (
@@ -78,10 +122,13 @@
 			isa = PBXGroup;
 			children = (
 				47B6FD331E4BA9D800A6EE6A /* AppDelegate.swift */,
-				47B6FD351E4BA9D800A6EE6A /* ViewController.swift */,
+				476F42C81E55053400A00FFB /* Models */,
+				476F42CA1E55053400A00FFB /* Networking */,
+				476F42CD1E55053400A00FFB /* ViewControllers */,
+				476F42D01E55053400A00FFB /* ViewModels */,
 				47B6FD371E4BA9D800A6EE6A /* Main.storyboard */,
-				47B6FD3A1E4BA9D800A6EE6A /* Assets.xcassets */,
 				47B6FD3C1E4BA9D800A6EE6A /* LaunchScreen.storyboard */,
+				47B6FD3A1E4BA9D800A6EE6A /* Assets.xcassets */,
 				47B6FD3F1E4BA9D800A6EE6A /* Info.plist */,
 			);
 			path = OTBTest;
@@ -106,6 +153,7 @@
 				47B6FD2C1E4BA9D700A6EE6A /* Sources */,
 				47B6FD2D1E4BA9D700A6EE6A /* Frameworks */,
 				47B6FD2E1E4BA9D700A6EE6A /* Resources */,
+				47C5B3F21E4D21F200978F1D /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -194,13 +242,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		47C5B3F21E4D21F200978F1D /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint does not exist, download it from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		47B6FD2C1E4BA9D700A6EE6A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47B6FD361E4BA9D800A6EE6A /* ViewController.swift in Sources */,
+				476F42D61E55053400A00FFB /* SearchViewController.swift in Sources */,
+				476F42D41E55053400A00FFB /* Session.swift in Sources */,
+				476F42D21E55053400A00FFB /* Hotel.swift in Sources */,
+				476F42D31E55053400A00FFB /* Request.swift in Sources */,
 				47B6FD341E4BA9D800A6EE6A /* AppDelegate.swift in Sources */,
+				476F42D71E55053400A00FFB /* HotelViewModel.swift in Sources */,
+				476F42D51E55053400A00FFB /* HotelViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +476,7 @@
 				47B6FD4F1E4BA9D800A6EE6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		47B6FD501E4BA9D800A6EE6A /* Build configuration list for PBXNativeTarget "OTBTestTests" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +485,7 @@
 				47B6FD521E4BA9D800A6EE6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
