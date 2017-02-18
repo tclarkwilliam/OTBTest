@@ -14,33 +14,27 @@ class HotelViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    self.title = "Hotel"
     self.fetchHotel()
   }
 
   private func fetchHotel() {
     self.viewModel.fetchHotel {
       [weak self]
-      (hotel) in
+      hotel in
       self?.configureLabels(hotel: hotel)
       self?.loadingView.isHidden = true
     }
   }
 
   private func configureLabels(hotel: Hotel) {
+    let presenter = HotelViewControllerPresenter(hotel: hotel)
     self.nameLabel.text = hotel.name
     self.locationLabel.text = hotel.location
-    self.ratingLabel.text = String(hotel.rating)
+    self.ratingLabel.text = presenter.renderRating()
     self.descriptionLabel.text = hotel.description
-    self.facilitiesLabel.text = hotel.facilities.joined(separator: "\n")
-    self.configureImage(hotel: hotel)
-  }
-
-  private func configureImage(hotel: Hotel) {
-    let imageString = hotel.images[0]
-    if let url = URL(string: imageString) {
-      guard let data = try? Data.init(contentsOf: url) else { return }
-      self.imageView.image = UIImage(data: data)
-    }
+    self.facilitiesLabel.text = presenter.renderFacilities()
+    self.imageView.image = presenter.renderImage()
   }
 
 }
