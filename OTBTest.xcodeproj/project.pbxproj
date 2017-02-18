@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		476F42D21E55053400A00FFB /* Hotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F42C91E55053400A00FFB /* Hotel.swift */; };
-		476F42D31E55053400A00FFB /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F42CB1E55053400A00FFB /* Request.swift */; };
-		476F42D41E55053400A00FFB /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F42CC1E55053400A00FFB /* Session.swift */; };
 		476F42D51E55053400A00FFB /* HotelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F42CE1E55053400A00FFB /* HotelViewController.swift */; };
 		476F42D61E55053400A00FFB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F42CF1E55053400A00FFB /* SearchViewController.swift */; };
 		476F42D71E55053400A00FFB /* HotelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F42D11E55053400A00FFB /* HotelViewModel.swift */; };
@@ -18,6 +16,8 @@
 		47B6FD3B1E4BA9D800A6EE6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47B6FD3A1E4BA9D800A6EE6A /* Assets.xcassets */; };
 		47B6FD3E1E4BA9D800A6EE6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47B6FD3C1E4BA9D800A6EE6A /* LaunchScreen.storyboard */; };
 		47B6FD491E4BA9D800A6EE6A /* OTBTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B6FD481E4BA9D800A6EE6A /* OTBTestTests.swift */; };
+		47D7CE221E57558F0069871C /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7CE211E57558F0069871C /* WebService.swift */; };
+		47D7CE241E575AEF0069871C /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7CE231E575AEE0069871C /* Resource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,8 +32,6 @@
 
 /* Begin PBXFileReference section */
 		476F42C91E55053400A00FFB /* Hotel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hotel.swift; sourceTree = "<group>"; };
-		476F42CB1E55053400A00FFB /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		476F42CC1E55053400A00FFB /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		476F42CE1E55053400A00FFB /* HotelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelViewController.swift; sourceTree = "<group>"; };
 		476F42CF1E55053400A00FFB /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		476F42D11E55053400A00FFB /* HotelViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelViewModel.swift; sourceTree = "<group>"; };
@@ -46,6 +44,8 @@
 		47B6FD441E4BA9D800A6EE6A /* OTBTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OTBTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47B6FD481E4BA9D800A6EE6A /* OTBTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTBTestTests.swift; sourceTree = "<group>"; };
 		47B6FD4A1E4BA9D800A6EE6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47D7CE211E57558F0069871C /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		47D7CE231E575AEE0069871C /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +77,8 @@
 		476F42CA1E55053400A00FFB /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				476F42CB1E55053400A00FFB /* Request.swift */,
-				476F42CC1E55053400A00FFB /* Session.swift */,
+				47D7CE211E57558F0069871C /* WebService.swift */,
+				47D7CE231E575AEE0069871C /* Resource.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -264,10 +264,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47D7CE241E575AEF0069871C /* Resource.swift in Sources */,
 				476F42D61E55053400A00FFB /* SearchViewController.swift in Sources */,
-				476F42D41E55053400A00FFB /* Session.swift in Sources */,
+				47D7CE221E57558F0069871C /* WebService.swift in Sources */,
 				476F42D21E55053400A00FFB /* Hotel.swift in Sources */,
-				476F42D31E55053400A00FFB /* Request.swift in Sources */,
 				47B6FD341E4BA9D800A6EE6A /* AppDelegate.swift in Sources */,
 				476F42D71E55053400A00FFB /* HotelViewModel.swift in Sources */,
 				476F42D51E55053400A00FFB /* HotelViewController.swift in Sources */,
