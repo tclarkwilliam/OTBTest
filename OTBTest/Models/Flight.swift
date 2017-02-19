@@ -1,50 +1,52 @@
 import Foundation
 
+let dateFormat = "YYYY-MM-dd'T'HH:mm:ssZ"
+
 struct Flight {
 
-  let arrivalDate: String
+  let departureDate: Date
+  let arrivalDate: Date
   let departureAirport: String
   let arrivalAirport: String
   let price: Int
   let airline: String
-  let departureDate: String
 
   init?(_ dictionary: JSONDictionary?) {
-    self.init(arrivalDate: dictionary?[Key.arrivalDate.rawValue] as? String,
+    self.init(departureDate: dictionary?[Key.departureDate.rawValue] as? String,
+              arrivalDate: dictionary?[Key.arrivalDate.rawValue] as? String,
               departureAirport: dictionary?[Key.departureAirport.rawValue] as? String,
               arrivalAirport: dictionary?[Key.arrivalAirport.rawValue] as? String,
               price: dictionary?[Key.price.rawValue] as? Int,
-              airline: dictionary?[Key.airline.rawValue] as? String,
-              departureDate: dictionary?[Key.departureDate.rawValue] as? String)
+              airline: dictionary?[Key.airline.rawValue] as? String)
   }
 
-  init?(arrivalDate: String?,
+  init?(departureDate: String?,
+        arrivalDate: String?,
         departureAirport: String?,
         arrivalAirport: String?,
         price: Int?,
-        airline: String?,
-        departureDate: String?) {
-    guard let arrivalDate = arrivalDate,
+        airline: String?) {
+    guard let departureDate = Date(fromString: departureDate, withFormat: dateFormat),
+          let arrivalDate = Date(fromString: arrivalDate, withFormat: dateFormat),
           let departureAirport = departureAirport,
           let arrivalAirport = arrivalAirport,
           let price = price,
-          let airline = airline,
-          let departureDate = departureDate else { return nil }
+          let airline = airline else { return nil }
+    self.departureDate = departureDate
     self.arrivalDate = arrivalDate
     self.departureAirport = departureAirport
     self.arrivalAirport = arrivalAirport
     self.price = price
     self.airline = airline
-    self.departureDate = departureDate
   }
 
   enum Key: String {
+    case departureDate = "departure_date"
     case arrivalDate = "arrival_date"
     case departureAirport = "departure_airport"
     case arrivalAirport = "arrival_airport"
     case price
     case airline
-    case departureDate = "departure_date"
   }
 }
 

@@ -9,17 +9,21 @@
 /* Begin PBXBuildFile section */
 		470263031E58BD39006E97EF /* FlightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470263021E58BD39006E97EF /* FlightsViewController.swift */; };
 		470263051E58C00C006E97EF /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470263041E58C00C006E97EF /* Flight.swift */; };
-		470263071E58C16A006E97EF /* FlightViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470263061E58C16A006E97EF /* FlightViewModel.swift */; };
+		470263071E58C16A006E97EF /* FlightsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470263061E58C16A006E97EF /* FlightsViewModel.swift */; };
 		4702630A1E591331006E97EF /* HotelViewControllerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470263091E591331006E97EF /* HotelViewControllerPresenter.swift */; };
 		476F42D21E55053400A00FFB /* Hotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F42C91E55053400A00FFB /* Hotel.swift */; };
 		476F42D51E55053400A00FFB /* HotelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F42CE1E55053400A00FFB /* HotelViewController.swift */; };
-		476F42D61E55053400A00FFB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F42CF1E55053400A00FFB /* SearchViewController.swift */; };
 		476F42D71E55053400A00FFB /* HotelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F42D11E55053400A00FFB /* HotelViewModel.swift */; };
+		479D7EE81E59232500E68F8D /* FlightsViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479D7EE71E59232500E68F8D /* FlightsViewControllerDataSource.swift */; };
+		479D7EEB1E59267100E68F8D /* FlightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 479D7EEA1E59267100E68F8D /* FlightCell.xib */; };
+		479D7EED1E5926A000E68F8D /* FlightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479D7EEC1E5926A000E68F8D /* FlightCell.swift */; };
+		479D7EF01E59DCD000E68F8D /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479D7EEF1E59DCD000E68F8D /* CurrencyFormatter.swift */; };
 		47B6FD341E4BA9D800A6EE6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B6FD331E4BA9D800A6EE6A /* AppDelegate.swift */; };
 		47B6FD391E4BA9D800A6EE6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47B6FD371E4BA9D800A6EE6A /* Main.storyboard */; };
 		47B6FD3B1E4BA9D800A6EE6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47B6FD3A1E4BA9D800A6EE6A /* Assets.xcassets */; };
 		47B6FD3E1E4BA9D800A6EE6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47B6FD3C1E4BA9D800A6EE6A /* LaunchScreen.storyboard */; };
 		47B6FD491E4BA9D800A6EE6A /* OTBTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B6FD481E4BA9D800A6EE6A /* OTBTestTests.swift */; };
+		47C8B2271E5B769C00FD7537 /* Date+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C8B2261E5B769C00FD7537 /* Date+Format.swift */; };
 		47D7CE221E57558F0069871C /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7CE211E57558F0069871C /* WebService.swift */; };
 		47D7CE241E575AEF0069871C /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7CE231E575AEE0069871C /* Resource.swift */; };
 /* End PBXBuildFile section */
@@ -37,12 +41,15 @@
 /* Begin PBXFileReference section */
 		470263021E58BD39006E97EF /* FlightsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightsViewController.swift; sourceTree = "<group>"; };
 		470263041E58C00C006E97EF /* Flight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
-		470263061E58C16A006E97EF /* FlightViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightViewModel.swift; sourceTree = "<group>"; };
+		470263061E58C16A006E97EF /* FlightsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightsViewModel.swift; sourceTree = "<group>"; };
 		470263091E591331006E97EF /* HotelViewControllerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelViewControllerPresenter.swift; sourceTree = "<group>"; };
 		476F42C91E55053400A00FFB /* Hotel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hotel.swift; sourceTree = "<group>"; };
 		476F42CE1E55053400A00FFB /* HotelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelViewController.swift; sourceTree = "<group>"; };
-		476F42CF1E55053400A00FFB /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		476F42D11E55053400A00FFB /* HotelViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelViewModel.swift; sourceTree = "<group>"; };
+		479D7EE71E59232500E68F8D /* FlightsViewControllerDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightsViewControllerDataSource.swift; sourceTree = "<group>"; };
+		479D7EEA1E59267100E68F8D /* FlightCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlightCell.xib; sourceTree = "<group>"; };
+		479D7EEC1E5926A000E68F8D /* FlightCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightCell.swift; sourceTree = "<group>"; };
+		479D7EEF1E59DCD000E68F8D /* CurrencyFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
 		47B6FD301E4BA9D800A6EE6A /* OTBTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTBTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47B6FD331E4BA9D800A6EE6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47B6FD381E4BA9D800A6EE6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,6 +59,7 @@
 		47B6FD441E4BA9D800A6EE6A /* OTBTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OTBTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47B6FD481E4BA9D800A6EE6A /* OTBTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTBTestTests.swift; sourceTree = "<group>"; };
 		47B6FD4A1E4BA9D800A6EE6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47C8B2261E5B769C00FD7537 /* Date+Format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Format.swift"; sourceTree = "<group>"; };
 		47D7CE211E57558F0069871C /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		47D7CE231E575AEE0069871C /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,7 +113,6 @@
 			children = (
 				476F42CE1E55053400A00FFB /* HotelViewController.swift */,
 				470263021E58BD39006E97EF /* FlightsViewController.swift */,
-				476F42CF1E55053400A00FFB /* SearchViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -114,9 +121,33 @@
 			isa = PBXGroup;
 			children = (
 				476F42D11E55053400A00FFB /* HotelViewModel.swift */,
-				470263061E58C16A006E97EF /* FlightViewModel.swift */,
+				470263061E58C16A006E97EF /* FlightsViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		479D7EE61E59231700E68F8D /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				479D7EE71E59232500E68F8D /* FlightsViewControllerDataSource.swift */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		479D7EE91E59265D00E68F8D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				479D7EEC1E5926A000E68F8D /* FlightCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		479D7EEE1E59DCC700E68F8D /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				479D7EEF1E59DCD000E68F8D /* CurrencyFormatter.swift */,
+			);
+			path = Formatters;
 			sourceTree = "<group>";
 		};
 		47B6FD271E4BA9D700A6EE6A = {
@@ -140,14 +171,19 @@
 		47B6FD321E4BA9D800A6EE6A /* OTBTest */ = {
 			isa = PBXGroup;
 			children = (
-				470263081E59131E006E97EF /* Presenters */,
 				47B6FD331E4BA9D800A6EE6A /* AppDelegate.swift */,
+				47C8B2251E5B768000FD7537 /* Extensions */,
+				479D7EEE1E59DCC700E68F8D /* Formatters */,
+				479D7EE91E59265D00E68F8D /* Cells */,
+				479D7EE61E59231700E68F8D /* DataSources */,
+				470263081E59131E006E97EF /* Presenters */,
 				476F42C81E55053400A00FFB /* Models */,
 				476F42CA1E55053400A00FFB /* Networking */,
 				476F42CD1E55053400A00FFB /* ViewControllers */,
 				476F42D01E55053400A00FFB /* ViewModels */,
 				47B6FD371E4BA9D800A6EE6A /* Main.storyboard */,
 				47B6FD3C1E4BA9D800A6EE6A /* LaunchScreen.storyboard */,
+				479D7EEA1E59267100E68F8D /* FlightCell.xib */,
 				47B6FD3A1E4BA9D800A6EE6A /* Assets.xcassets */,
 				47B6FD3F1E4BA9D800A6EE6A /* Info.plist */,
 			);
@@ -161,6 +197,14 @@
 				47B6FD4A1E4BA9D800A6EE6A /* Info.plist */,
 			);
 			path = OTBTestTests;
+			sourceTree = "<group>";
+		};
+		47C8B2251E5B768000FD7537 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				47C8B2261E5B769C00FD7537 /* Date+Format.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,7 +258,8 @@
 				TargetAttributes = {
 					47B6FD2F1E4BA9D700A6EE6A = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = NZ74P8DCC3;
+						ProvisioningStyle = Manual;
 					};
 					47B6FD431E4BA9D800A6EE6A = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -248,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47B6FD3E1E4BA9D800A6EE6A /* LaunchScreen.storyboard in Resources */,
+				479D7EEB1E59267100E68F8D /* FlightCell.xib in Resources */,
 				47B6FD3B1E4BA9D800A6EE6A /* Assets.xcassets in Resources */,
 				47B6FD391E4BA9D800A6EE6A /* Main.storyboard in Resources */,
 			);
@@ -286,15 +332,18 @@
 			files = (
 				470263051E58C00C006E97EF /* Flight.swift in Sources */,
 				47D7CE241E575AEF0069871C /* Resource.swift in Sources */,
-				476F42D61E55053400A00FFB /* SearchViewController.swift in Sources */,
 				47D7CE221E57558F0069871C /* WebService.swift in Sources */,
+				479D7EED1E5926A000E68F8D /* FlightCell.swift in Sources */,
+				479D7EF01E59DCD000E68F8D /* CurrencyFormatter.swift in Sources */,
+				47C8B2271E5B769C00FD7537 /* Date+Format.swift in Sources */,
 				476F42D21E55053400A00FFB /* Hotel.swift in Sources */,
 				47B6FD341E4BA9D800A6EE6A /* AppDelegate.swift in Sources */,
 				4702630A1E591331006E97EF /* HotelViewControllerPresenter.swift in Sources */,
-				470263071E58C16A006E97EF /* FlightViewModel.swift in Sources */,
+				470263071E58C16A006E97EF /* FlightsViewModel.swift in Sources */,
 				476F42D71E55053400A00FFB /* HotelViewModel.swift in Sources */,
 				470263031E58BD39006E97EF /* FlightsViewController.swift in Sources */,
 				476F42D51E55053400A00FFB /* HotelViewController.swift in Sources */,
+				479D7EE81E59232500E68F8D /* FlightsViewControllerDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,10 +482,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NZ74P8DCC3;
 				INFOPLIST_FILE = OTBTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.uk.tomclark.OTBTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3BA320EC-B48F-4AA4-AB68-D277C4A6E4D8";
+				PROVISIONING_PROFILE_SPECIFIER = "Tom Clark";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -445,6 +497,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = OTBTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.uk.tomclark.OTBTest;

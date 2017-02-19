@@ -2,34 +2,37 @@ import UIKit
 
 class FlightsViewController: UIViewController {
 
-  @IBOutlet weak var airlineLabel: UILabel!
-  @IBOutlet weak var departureDateLabel: UILabel!
-  @IBOutlet weak var arrivalDateLabel: UILabel!
-  @IBOutlet weak var priceLabel: UILabel!
-  @IBOutlet weak var departureAirportLabel: UILabel!
-  @IBOutlet weak var arrivalAirportLabel: UILabel!
+  @IBOutlet weak var headingLabel: UILabel!
+  @IBOutlet weak var collectionView: UICollectionView!
 
-  let viewModel = FlightViewModel()
+  let viewModel = FlightsViewModel()
+  var dataSource: FlightsViewControllerDataSource?
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    self.title = "Flights"
+    self.registerCell()
     self.fetchFlights()
+  }
+
+  private func registerCell() {
+    let cellName = String(describing: FlightCell.self)
+    let nib = UINib(nibName: cellName, bundle: nil)
+    self.collectionView.register(nib, forCellWithReuseIdentifier: cellName)
   }
 
   private func fetchFlights() {
     self.viewModel.fetchFlights {
+      [weak self]
       flights in
-      self.configureLabels(flights: flights)
+      self?.headingLabel.text = "\(flights.count) flights available"
+      self?.configureDataSource(flights: flights)
     }
   }
 
-  private func configureLabels(flights: [Flight]) {
-    self.airlineLabel.text = flights.first?.airline
-    self.departureDateLabel.text = flights.first?.departureDate
-    self.arrivalDateLabel.text = flights.first?.arrivalDate
-    self.priceLabel.text = "\(flights.first?.price)"
-    self.departureAirportLabel.text = flights.first?.departureAirport
-    self.arrivalAirportLabel.text = flights.first?.arrivalAirport
+  private func configureDataSource(flights: [Flight]) {
+    self.dataSource = FlightsViewControllerDataSource(flights: flights)
+    self.collectionView.dataSource = self.dataSource
+    self.collectionView.delegate = self.dataSource
   }
+
 }
