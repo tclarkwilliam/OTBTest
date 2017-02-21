@@ -1,0 +1,16 @@
+{
+  "name": "Labranda Isla Bonita Hotel",
+  "hotel_location": "Costa Adeje, Tenerife, Canaries",
+  "description": "On the Beach Offer - Save up to 15%\r\nBook this hotel by 31.10.2016, for travel between 01.11.2016 and 30.04.2017. Offer applicable to all room types on any board basis.",
+  "images": [
+    "https://i.onthebeach.co.uk/v1/hotel_images/1ba1aa1c-17e4-4717-afe7-f2b2ea877b87/cover/374/296/high/1.0/labranda-isla-bonita-hotel.jpeg",
+    "https://i.onthebeach.co.uk/v1/hotel_images/73f82009-b0f5-43b6-9eee-cb0fb25f459a/cover/374/296/high/1.0/labranda-isla-bonita-hotel.jpeg",
+    "https://i.onthebeach.co.uk/v1/hotel_images/d26659fb-e513-4fbf-9fed-2c24583ad4f0/cover/374/296/high/1.0/labranda-isla-bonita-hotel.jpeg"
+  ],
+  "rating": 4,
+  "facilities": [
+    "24 Hour Reception",
+    "Aerobics",
+    "Air Conditioning"
+  ]
+}
