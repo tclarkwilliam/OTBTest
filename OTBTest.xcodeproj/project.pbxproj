@@ -28,6 +28,8 @@
 		47D7CE221E57558F0069871C /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7CE211E57558F0069871C /* WebService.swift */; };
 		47D7CE241E575AEF0069871C /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7CE231E575AEE0069871C /* Resource.swift */; };
 		47E18EB61E5F8903002B0163 /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E18EB51E5F8903002B0163 /* JSONLoader.swift */; };
+		47E18EB81E5F9883002B0163 /* FlightSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E18EB71E5F9883002B0163 /* FlightSpec.swift */; };
+		47E18EBA1E5F998B002B0163 /* flight.json in Resources */ = {isa = PBXBuildFile; fileRef = 47E18EB91E5F998B002B0163 /* flight.json */; };
 		D43C99FDB2E16A0E77577F57 /* Pods_OTBTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12502866791A8A9B3173A902 /* Pods_OTBTestTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +71,8 @@
 		47D7CE211E57558F0069871C /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		47D7CE231E575AEE0069871C /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		47E18EB51E5F8903002B0163 /* JSONLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
+		47E18EB71E5F9883002B0163 /* FlightSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightSpec.swift; sourceTree = "<group>"; };
+		47E18EB91E5F998B002B0163 /* flight.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = flight.json; sourceTree = "<group>"; };
 		C364526897510AB53753B663 /* Pods-OTBTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTBTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OTBTestTests/Pods-OTBTestTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,6 +142,7 @@
 		478925DD1E5E243300CFD961 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
+				47E18EB91E5F998B002B0163 /* flight.json */,
 				477A83441E5E4385007A7A98 /* hotel.json */,
 				47E18EB51E5F8903002B0163 /* JSONLoader.swift */,
 			);
@@ -148,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				478925E11E5E249A00CFD961 /* HotelSpec.swift */,
+				47E18EB71E5F9883002B0163 /* FlightSpec.swift */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -354,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				477A83451E5E4385007A7A98 /* hotel.json in Resources */,
+				47E18EBA1E5F998B002B0163 /* flight.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +454,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47E18EB81E5F9883002B0163 /* FlightSpec.swift in Sources */,
 				47E18EB61E5F8903002B0163 /* JSONLoader.swift in Sources */,
 				478925E21E5E249A00CFD961 /* HotelSpec.swift in Sources */,
 			);
