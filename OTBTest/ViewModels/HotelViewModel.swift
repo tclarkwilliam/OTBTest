@@ -1,13 +1,17 @@
 import Foundation
 
-typealias HotelResponse = (Hotel) -> Void
-
 class HotelViewModel {
 
-  func fetchHotel(completion: @escaping HotelResponse) {
-    WebService().load(Hotel.resource) {
-      result in
-      completion(result)
+  private let webService: WebService
+
+  init(webService: WebService = WebService()) {
+    self.webService = webService
+  }
+
+  func fetchHotel(completion: @escaping ResponseCompletion<Hotel>) {
+    self.webService.load(Hotel.resource) {
+      result, error in
+      completion(result, error)
     }
   }
 

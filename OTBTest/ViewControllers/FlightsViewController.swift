@@ -23,9 +23,11 @@ class FlightsViewController: UIViewController {
   private func fetchFlights() {
     self.viewModel.fetchFlights {
       [weak self]
-      flights in
-      self?.headingLabel.text = "\(flights.count) flights available"
-      self?.configureDataSource(flights: flights)
+      flights, error in
+      if let flights = flights {
+        self?.headingLabel.text = "\(flights.count) flights available"
+        self?.configureDataSource(flights: flights)
+      }
     }
   }
 

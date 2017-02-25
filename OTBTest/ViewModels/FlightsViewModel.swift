@@ -1,13 +1,17 @@
 import Foundation
 
-typealias FlightsResponse = ([Flight]) -> Void
-
 class FlightsViewModel {
 
-  func fetchFlights(completion: @escaping FlightsResponse) {
-    WebService().load(Flight.resource) {
-      result in
-      completion(result)
+  private let webService: WebService
+
+  init(webService: WebService = WebService()) {
+    self.webService = webService
+  }
+
+  func fetchFlights(completion: @escaping ResponseCompletion<[Flight]>) {
+    self.webService.load(Flight.resource) {
+      result, error in
+      completion(result, error)
     }
   }
 

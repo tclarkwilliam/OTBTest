@@ -1,6 +1,6 @@
 import Foundation
 
-typealias JSONDictionary = [String: Any]
+typealias JSONDictionary = [String: AnyObject]
 
 struct Hotel {
 

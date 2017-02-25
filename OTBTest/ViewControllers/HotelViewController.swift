@@ -20,9 +20,11 @@ class HotelViewController: UIViewController {
   private func fetchHotel() {
     self.viewModel.fetchHotel {
       [weak self]
-      hotel in
-      self?.configureLabels(hotel: hotel)
-      self?.loadingView.isHidden = true
+      hotel, error in
+      if let hotel = hotel {
+        self?.configureLabels(hotel: hotel)
+        self?.loadingView.isHidden = true
+      }
     }
   }
 

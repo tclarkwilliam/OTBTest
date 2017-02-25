@@ -30,6 +30,9 @@
 		47E18EB61E5F8903002B0163 /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E18EB51E5F8903002B0163 /* JSONLoader.swift */; };
 		47E18EB81E5F9883002B0163 /* FlightSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E18EB71E5F9883002B0163 /* FlightSpec.swift */; };
 		47E18EBA1E5F998B002B0163 /* flight.json in Resources */ = {isa = PBXBuildFile; fileRef = 47E18EB91E5F998B002B0163 /* flight.json */; };
+		47E18EC01E619456002B0163 /* WebServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E18EBF1E619456002B0163 /* WebServiceSpec.swift */; };
+		47E18EC31E660BC7002B0163 /* MockSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E18EC21E660BC7002B0163 /* MockSession.swift */; };
+		47E18EC51E660C47002B0163 /* MockDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E18EC41E660C47002B0163 /* MockDataTask.swift */; };
 		D43C99FDB2E16A0E77577F57 /* Pods_OTBTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12502866791A8A9B3173A902 /* Pods_OTBTestTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +76,9 @@
 		47E18EB51E5F8903002B0163 /* JSONLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
 		47E18EB71E5F9883002B0163 /* FlightSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightSpec.swift; sourceTree = "<group>"; };
 		47E18EB91E5F998B002B0163 /* flight.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = flight.json; sourceTree = "<group>"; };
+		47E18EBF1E619456002B0163 /* WebServiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceSpec.swift; sourceTree = "<group>"; };
+		47E18EC21E660BC7002B0163 /* MockSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockSession.swift; sourceTree = "<group>"; };
+		47E18EC41E660C47002B0163 /* MockDataTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockDataTask.swift; sourceTree = "<group>"; };
 		C364526897510AB53753B663 /* Pods-OTBTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTBTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OTBTestTests/Pods-OTBTestTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -153,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				478925E11E5E249A00CFD961 /* HotelSpec.swift */,
+				47E18EBF1E619456002B0163 /* WebServiceSpec.swift */,
 				47E18EB71E5F9883002B0163 /* FlightSpec.swift */,
 			);
 			path = Specs;
@@ -227,6 +234,7 @@
 		47B6FD471E4BA9D800A6EE6A /* OTBTestTests */ = {
 			isa = PBXGroup;
 			children = (
+				47E18EC11E660865002B0163 /* Mocks */,
 				478925E01E5E249A00CFD961 /* Specs */,
 				478925DD1E5E243300CFD961 /* JSON */,
 				47B6FD4A1E4BA9D800A6EE6A /* Info.plist */,
@@ -240,6 +248,15 @@
 				47C8B2261E5B769C00FD7537 /* Date+Format.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		47E18EC11E660865002B0163 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				47E18EC21E660BC7002B0163 /* MockSession.swift */,
+				47E18EC41E660C47002B0163 /* MockDataTask.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		85511DA241212CC77DF5086A /* Pods */ = {
@@ -455,7 +472,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				47E18EB81E5F9883002B0163 /* FlightSpec.swift in Sources */,
+				47E18EC01E619456002B0163 /* WebServiceSpec.swift in Sources */,
 				47E18EB61E5F8903002B0163 /* JSONLoader.swift in Sources */,
+				47E18EC51E660C47002B0163 /* MockDataTask.swift in Sources */,
+				47E18EC31E660BC7002B0163 /* MockSession.swift in Sources */,
 				478925E21E5E249A00CFD961 /* HotelSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

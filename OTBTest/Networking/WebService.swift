@@ -1,15 +1,35 @@
 import Foundation
 
-final class WebService {
+typealias ResponseCompletion<T> = (T?, Error?) -> Void
 
-  func load<T>(_ resource: Resource<T>, completion: @escaping (T) -> (Void)) {
-    URLSession.shared.dataTask(with: resource.url) {
+class WebService {
+
+  let session: URLSession
+
+  init(session: URLSession = URLSession.shared) {
+    self.session = session
+  }
+
+  func load<T>(_ resource: Resource<T>,
+               completion: @escaping ResponseCompletion<T>) {
+    self.session.dataTask(with: resource.url) {
       (data, response, error) in
-      guard let result = data.flatMap(resource.parse) else { return }
-      DispatchQueue.main.async {
-        completion(result)
+      if let result = data.flatMap(resource.parse) {
+        self.response(result, nil,
+                      completion: completion)
+      } else {
+        self.response(nil, error,
+                      completion: completion)
+
       }
     }.resume()
+  }
+
+  private func response<T>(_ result: T?, _ error: Error?,
+                           completion: @escaping ResponseCompletion<T>) {
+    DispatchQueue.main.async {
+      completion(result, error)
+    }
   }
 
 }
