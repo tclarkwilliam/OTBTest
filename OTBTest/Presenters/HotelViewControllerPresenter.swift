@@ -2,7 +2,7 @@ import UIKit
 
 class HotelViewControllerPresenter {
 
-  let hotel: Hotel
+  private let hotel: Hotel
 
   init(hotel: Hotel) {
     self.hotel = hotel

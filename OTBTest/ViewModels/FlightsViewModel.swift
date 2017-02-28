@@ -2,7 +2,7 @@ import Foundation
 
 class FlightsViewModel {
 
-  private let webService: WebService
+  private(set) var webService: WebService
 
   init(webService: WebService = WebService()) {
     self.webService = webService

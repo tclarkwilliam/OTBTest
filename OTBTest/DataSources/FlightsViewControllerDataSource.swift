@@ -5,7 +5,7 @@ class FlightsViewControllerDataSource: NSObject,
                                        UICollectionViewDelegate,
                                        UICollectionViewDelegateFlowLayout {
 
-  let flights: [Flight]
+  private let flights: [Flight]
 
   init(flights: [Flight]) {
     self.flights = flights

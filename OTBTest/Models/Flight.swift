@@ -56,12 +56,11 @@ extension Flight {
     return URL(string: "http://pastebin.com/raw/bFnZQEx0")!
   }
 
-  static let resource = Resource<[Flight]>(url: url,
-                                           parseJSON: {
+  static let resource = Resource<[Flight]>(url: url) {
     json in
     guard let dictionary = json as? JSONDictionary,
           let flights = dictionary["flights"] as? [JSONDictionary] else { return nil }
     return flights.flatMap(Flight.init)
-  })
+  }
 
 }

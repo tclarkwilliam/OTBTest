@@ -15,7 +15,6 @@
 		476F42D51E55053400A00FFB /* HotelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F42CE1E55053400A00FFB /* HotelViewController.swift */; };
 		476F42D71E55053400A00FFB /* HotelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F42D11E55053400A00FFB /* HotelViewModel.swift */; };
 		477A83451E5E4385007A7A98 /* hotel.json in Resources */ = {isa = PBXBuildFile; fileRef = 477A83441E5E4385007A7A98 /* hotel.json */; };
-		478925E21E5E249A00CFD961 /* HotelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478925E11E5E249A00CFD961 /* HotelSpec.swift */; };
 		479D7EE81E59232500E68F8D /* FlightsViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479D7EE71E59232500E68F8D /* FlightsViewControllerDataSource.swift */; };
 		479D7EEB1E59267100E68F8D /* FlightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 479D7EEA1E59267100E68F8D /* FlightCell.xib */; };
 		479D7EED1E5926A000E68F8D /* FlightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479D7EEC1E5926A000E68F8D /* FlightCell.swift */; };
@@ -28,11 +27,14 @@
 		47D7CE221E57558F0069871C /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7CE211E57558F0069871C /* WebService.swift */; };
 		47D7CE241E575AEF0069871C /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7CE231E575AEE0069871C /* Resource.swift */; };
 		47E18EB61E5F8903002B0163 /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E18EB51E5F8903002B0163 /* JSONLoader.swift */; };
-		47E18EB81E5F9883002B0163 /* FlightSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E18EB71E5F9883002B0163 /* FlightSpec.swift */; };
 		47E18EBA1E5F998B002B0163 /* flight.json in Resources */ = {isa = PBXBuildFile; fileRef = 47E18EB91E5F998B002B0163 /* flight.json */; };
-		47E18EC01E619456002B0163 /* WebServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E18EBF1E619456002B0163 /* WebServiceSpec.swift */; };
 		47E18EC31E660BC7002B0163 /* MockSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E18EC21E660BC7002B0163 /* MockSession.swift */; };
 		47E18EC51E660C47002B0163 /* MockDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E18EC41E660C47002B0163 /* MockDataTask.swift */; };
+		47E6CE6A1E676E1100EE8C6C /* FlightSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E6CE631E676E1100EE8C6C /* FlightSpec.swift */; };
+		47E6CE6B1E676E1100EE8C6C /* HotelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E6CE641E676E1100EE8C6C /* HotelSpec.swift */; };
+		47E6CE6C1E676E1100EE8C6C /* WebServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E6CE661E676E1100EE8C6C /* WebServiceSpec.swift */; };
+		47E6CE6D1E676E1100EE8C6C /* FlightsViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E6CE681E676E1100EE8C6C /* FlightsViewModelSpec.swift */; };
+		47E6CE6E1E676E1100EE8C6C /* HotelViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E6CE691E676E1100EE8C6C /* HotelViewModelSpec.swift */; };
 		D43C99FDB2E16A0E77577F57 /* Pods_OTBTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12502866791A8A9B3173A902 /* Pods_OTBTestTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,7 +59,6 @@
 		476F42CE1E55053400A00FFB /* HotelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelViewController.swift; sourceTree = "<group>"; };
 		476F42D11E55053400A00FFB /* HotelViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelViewModel.swift; sourceTree = "<group>"; };
 		477A83441E5E4385007A7A98 /* hotel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hotel.json; sourceTree = "<group>"; };
-		478925E11E5E249A00CFD961 /* HotelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelSpec.swift; sourceTree = "<group>"; };
 		479D7EE71E59232500E68F8D /* FlightsViewControllerDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightsViewControllerDataSource.swift; sourceTree = "<group>"; };
 		479D7EEA1E59267100E68F8D /* FlightCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlightCell.xib; sourceTree = "<group>"; };
 		479D7EEC1E5926A000E68F8D /* FlightCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightCell.swift; sourceTree = "<group>"; };
@@ -74,11 +75,14 @@
 		47D7CE211E57558F0069871C /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		47D7CE231E575AEE0069871C /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		47E18EB51E5F8903002B0163 /* JSONLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
-		47E18EB71E5F9883002B0163 /* FlightSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightSpec.swift; sourceTree = "<group>"; };
 		47E18EB91E5F998B002B0163 /* flight.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = flight.json; sourceTree = "<group>"; };
-		47E18EBF1E619456002B0163 /* WebServiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceSpec.swift; sourceTree = "<group>"; };
 		47E18EC21E660BC7002B0163 /* MockSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockSession.swift; sourceTree = "<group>"; };
 		47E18EC41E660C47002B0163 /* MockDataTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockDataTask.swift; sourceTree = "<group>"; };
+		47E6CE631E676E1100EE8C6C /* FlightSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightSpec.swift; sourceTree = "<group>"; };
+		47E6CE641E676E1100EE8C6C /* HotelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelSpec.swift; sourceTree = "<group>"; };
+		47E6CE661E676E1100EE8C6C /* WebServiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceSpec.swift; sourceTree = "<group>"; };
+		47E6CE681E676E1100EE8C6C /* FlightsViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightsViewModelSpec.swift; sourceTree = "<group>"; };
+		47E6CE691E676E1100EE8C6C /* HotelViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelViewModelSpec.swift; sourceTree = "<group>"; };
 		C364526897510AB53753B663 /* Pods-OTBTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTBTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OTBTestTests/Pods-OTBTestTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -158,9 +162,9 @@
 		478925E01E5E249A00CFD961 /* Specs */ = {
 			isa = PBXGroup;
 			children = (
-				478925E11E5E249A00CFD961 /* HotelSpec.swift */,
-				47E18EBF1E619456002B0163 /* WebServiceSpec.swift */,
-				47E18EB71E5F9883002B0163 /* FlightSpec.swift */,
+				47E6CE621E676E1100EE8C6C /* Models */,
+				47E6CE651E676E1100EE8C6C /* Networking */,
+				47E6CE671E676E1100EE8C6C /* ViewModels */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -257,6 +261,32 @@
 				47E18EC41E660C47002B0163 /* MockDataTask.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		47E6CE621E676E1100EE8C6C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				47E6CE631E676E1100EE8C6C /* FlightSpec.swift */,
+				47E6CE641E676E1100EE8C6C /* HotelSpec.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		47E6CE651E676E1100EE8C6C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				47E6CE661E676E1100EE8C6C /* WebServiceSpec.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		47E6CE671E676E1100EE8C6C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				47E6CE681E676E1100EE8C6C /* FlightsViewModelSpec.swift */,
+				47E6CE691E676E1100EE8C6C /* HotelViewModelSpec.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		85511DA241212CC77DF5086A /* Pods */ = {
@@ -471,12 +501,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47E18EB81E5F9883002B0163 /* FlightSpec.swift in Sources */,
-				47E18EC01E619456002B0163 /* WebServiceSpec.swift in Sources */,
+				47E6CE6A1E676E1100EE8C6C /* FlightSpec.swift in Sources */,
+				47E6CE6C1E676E1100EE8C6C /* WebServiceSpec.swift in Sources */,
+				47E6CE6D1E676E1100EE8C6C /* FlightsViewModelSpec.swift in Sources */,
 				47E18EB61E5F8903002B0163 /* JSONLoader.swift in Sources */,
 				47E18EC51E660C47002B0163 /* MockDataTask.swift in Sources */,
 				47E18EC31E660BC7002B0163 /* MockSession.swift in Sources */,
-				478925E21E5E249A00CFD961 /* HotelSpec.swift in Sources */,
+				47E6CE6E1E676E1100EE8C6C /* HotelViewModelSpec.swift in Sources */,
+				47E6CE6B1E676E1100EE8C6C /* HotelSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

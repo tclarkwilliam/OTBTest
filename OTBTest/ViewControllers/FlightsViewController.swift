@@ -5,8 +5,8 @@ class FlightsViewController: UIViewController {
   @IBOutlet weak var headingLabel: UILabel!
   @IBOutlet weak var collectionView: UICollectionView!
 
-  let viewModel = FlightsViewModel()
-  var dataSource: FlightsViewControllerDataSource?
+  private let viewModel = FlightsViewModel()
+  private(set) var dataSource: FlightsViewControllerDataSource?
 
   override func viewDidLoad() {
     super.viewDidLoad()

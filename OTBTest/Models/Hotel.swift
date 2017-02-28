@@ -57,11 +57,10 @@ extension Hotel {
     return URL(string: "http://pastebin.com/raw/f0Tm6bfy")!
   }
 
-  static let resource = Resource<Hotel>(url: url,
-                                        parseJSON: {
+  static let resource = Resource<Hotel>(url: url) {
     json in
     guard let hotel = json as? JSONDictionary else { return nil }
     return Hotel(hotel)
-  })
+  }
 
 }

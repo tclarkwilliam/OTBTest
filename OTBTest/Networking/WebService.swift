@@ -4,7 +4,7 @@ typealias ResponseCompletion<T> = (T?, Error?) -> Void
 
 class WebService {
 
-  let session: URLSession
+  private let session: URLSession
 
   init(session: URLSession = URLSession.shared) {
     self.session = session
