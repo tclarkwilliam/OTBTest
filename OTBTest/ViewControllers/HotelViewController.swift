@@ -10,7 +10,7 @@ class HotelViewController: UIViewController {
   @IBOutlet weak var ratingLabel: UILabel!
   @IBOutlet weak var facilitiesLabel: UILabel!
 
-  private let viewModel = HotelViewModel()
+  var viewModel = HotelViewModel()
 
   override func viewDidLoad() {
     super.viewDidLoad()

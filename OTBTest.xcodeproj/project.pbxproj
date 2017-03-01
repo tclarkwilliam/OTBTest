@@ -26,7 +26,8 @@
 		47C8B2271E5B769C00FD7537 /* Date+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C8B2261E5B769C00FD7537 /* Date+Format.swift */; };
 		47D7CE221E57558F0069871C /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7CE211E57558F0069871C /* WebService.swift */; };
 		47D7CE241E575AEF0069871C /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7CE231E575AEE0069871C /* Resource.swift */; };
-		47E18EB61E5F8903002B0163 /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E18EB51E5F8903002B0163 /* JSONLoader.swift */; };
+		47E039251E684FD200220165 /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E039241E684FD200220165 /* JSONLoader.swift */; };
+		47E039271E684FE400220165 /* StoryboardLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E039261E684FE400220165 /* StoryboardLoader.swift */; };
 		47E18EBA1E5F998B002B0163 /* flight.json in Resources */ = {isa = PBXBuildFile; fileRef = 47E18EB91E5F998B002B0163 /* flight.json */; };
 		47E18EC31E660BC7002B0163 /* MockSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E18EC21E660BC7002B0163 /* MockSession.swift */; };
 		47E18EC51E660C47002B0163 /* MockDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E18EC41E660C47002B0163 /* MockDataTask.swift */; };
@@ -35,6 +36,8 @@
 		47E6CE6C1E676E1100EE8C6C /* WebServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E6CE661E676E1100EE8C6C /* WebServiceSpec.swift */; };
 		47E6CE6D1E676E1100EE8C6C /* FlightsViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E6CE681E676E1100EE8C6C /* FlightsViewModelSpec.swift */; };
 		47E6CE6E1E676E1100EE8C6C /* HotelViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E6CE691E676E1100EE8C6C /* HotelViewModelSpec.swift */; };
+		47E6CE761E6792B200EE8C6C /* HotelViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E6CE751E6792B200EE8C6C /* HotelViewControllerSpec.swift */; };
+		47E6CE781E6792BF00EE8C6C /* FlightsViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E6CE771E6792BF00EE8C6C /* FlightsViewControllerSpec.swift */; };
 		D43C99FDB2E16A0E77577F57 /* Pods_OTBTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12502866791A8A9B3173A902 /* Pods_OTBTestTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,7 +77,8 @@
 		47C8B2261E5B769C00FD7537 /* Date+Format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Format.swift"; sourceTree = "<group>"; };
 		47D7CE211E57558F0069871C /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		47D7CE231E575AEE0069871C /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
-		47E18EB51E5F8903002B0163 /* JSONLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
+		47E039241E684FD200220165 /* JSONLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
+		47E039261E684FE400220165 /* StoryboardLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardLoader.swift; sourceTree = "<group>"; };
 		47E18EB91E5F998B002B0163 /* flight.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = flight.json; sourceTree = "<group>"; };
 		47E18EC21E660BC7002B0163 /* MockSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockSession.swift; sourceTree = "<group>"; };
 		47E18EC41E660C47002B0163 /* MockDataTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockDataTask.swift; sourceTree = "<group>"; };
@@ -83,6 +87,8 @@
 		47E6CE661E676E1100EE8C6C /* WebServiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceSpec.swift; sourceTree = "<group>"; };
 		47E6CE681E676E1100EE8C6C /* FlightsViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightsViewModelSpec.swift; sourceTree = "<group>"; };
 		47E6CE691E676E1100EE8C6C /* HotelViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelViewModelSpec.swift; sourceTree = "<group>"; };
+		47E6CE751E6792B200EE8C6C /* HotelViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelViewControllerSpec.swift; sourceTree = "<group>"; };
+		47E6CE771E6792BF00EE8C6C /* FlightsViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightsViewControllerSpec.swift; sourceTree = "<group>"; };
 		C364526897510AB53753B663 /* Pods-OTBTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTBTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OTBTestTests/Pods-OTBTestTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -154,7 +160,6 @@
 			children = (
 				47E18EB91E5F998B002B0163 /* flight.json */,
 				477A83441E5E4385007A7A98 /* hotel.json */,
-				47E18EB51E5F8903002B0163 /* JSONLoader.swift */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -162,6 +167,7 @@
 		478925E01E5E249A00CFD961 /* Specs */ = {
 			isa = PBXGroup;
 			children = (
+				47E6CE741E6792B200EE8C6C /* ViewControllers */,
 				47E6CE621E676E1100EE8C6C /* Models */,
 				47E6CE651E676E1100EE8C6C /* Networking */,
 				47E6CE671E676E1100EE8C6C /* ViewModels */,
@@ -238,6 +244,7 @@
 		47B6FD471E4BA9D800A6EE6A /* OTBTestTests */ = {
 			isa = PBXGroup;
 			children = (
+				47E039231E684FD200220165 /* Helpers */,
 				47E18EC11E660865002B0163 /* Mocks */,
 				478925E01E5E249A00CFD961 /* Specs */,
 				478925DD1E5E243300CFD961 /* JSON */,
@@ -252,6 +259,15 @@
 				47C8B2261E5B769C00FD7537 /* Date+Format.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		47E039231E684FD200220165 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				47E039241E684FD200220165 /* JSONLoader.swift */,
+				47E039261E684FE400220165 /* StoryboardLoader.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		47E18EC11E660865002B0163 /* Mocks */ = {
@@ -287,6 +303,15 @@
 				47E6CE691E676E1100EE8C6C /* HotelViewModelSpec.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		47E6CE741E6792B200EE8C6C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				47E6CE751E6792B200EE8C6C /* HotelViewControllerSpec.swift */,
+				47E6CE771E6792BF00EE8C6C /* FlightsViewControllerSpec.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		85511DA241212CC77DF5086A /* Pods */ = {
@@ -502,13 +527,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				47E6CE6A1E676E1100EE8C6C /* FlightSpec.swift in Sources */,
+				47E039251E684FD200220165 /* JSONLoader.swift in Sources */,
+				47E6CE761E6792B200EE8C6C /* HotelViewControllerSpec.swift in Sources */,
 				47E6CE6C1E676E1100EE8C6C /* WebServiceSpec.swift in Sources */,
 				47E6CE6D1E676E1100EE8C6C /* FlightsViewModelSpec.swift in Sources */,
-				47E18EB61E5F8903002B0163 /* JSONLoader.swift in Sources */,
 				47E18EC51E660C47002B0163 /* MockDataTask.swift in Sources */,
 				47E18EC31E660BC7002B0163 /* MockSession.swift in Sources */,
+				47E6CE781E6792BF00EE8C6C /* FlightsViewControllerSpec.swift in Sources */,
 				47E6CE6E1E676E1100EE8C6C /* HotelViewModelSpec.swift in Sources */,
 				47E6CE6B1E676E1100EE8C6C /* HotelSpec.swift in Sources */,
+				47E039271E684FE400220165 /* StoryboardLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

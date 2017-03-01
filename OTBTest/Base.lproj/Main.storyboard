@@ -58,7 +58,7 @@
         <!--Hotel-->
         <scene sceneID="tG8-8y-EdD">
             <objects>
-                <viewController title="Hotel" automaticallyAdjustsScrollViewInsets="NO" id="CSl-bU-q3l" customClass="HotelViewController" customModule="OTBTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HotelViewController" title="Hotel" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CSl-bU-q3l" customClass="HotelViewController" customModule="OTBTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Te6-QF-apT"/>
                         <viewControllerLayoutGuide type="bottom" id="GUa-3E-2xW"/>
@@ -271,7 +271,7 @@
         <!--Flights-->
         <scene sceneID="dLt-w8-B2D">
             <objects>
-                <viewController title="Flights" automaticallyAdjustsScrollViewInsets="NO" id="Ij2-Fd-1Lh" customClass="FlightsViewController" customModule="OTBTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FlightsViewController" title="Flights" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ij2-Fd-1Lh" customClass="FlightsViewController" customModule="OTBTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2IH-rn-sRF"/>
                         <viewControllerLayoutGuide type="bottom" id="hLF-BM-gf3"/>
