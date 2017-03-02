@@ -8,20 +8,20 @@ class FlightsViewControllerSpec: QuickSpec {
 
     var subject: FlightsViewController!
     var mockViewModel: MockFlightsViewModel!
-    var flight: [Flight]!
+    var dictionaries: [JSONDictionary]!
+    var flights: [Flight]!
 
     describe("fetchFlights") {
 
       beforeEach {
-        let dictionary = JSONLoader.load("flight", forClass: FlightsViewControllerSpec.self)!
-        let flights = dictionary["flights"] as! [JSONDictionary]
-        flight = flights.flatMap(Flight.init)
+        dictionaries = ResultLoader.loadFlights(forClass: FlightsViewControllerSpec.self)
+        flights = dictionaries.flatMap(Flight.init)
         subject = StoryboardLoader.load(FlightsViewController.self)
         mockViewModel = MockFlightsViewModel()
         subject.viewModel = mockViewModel
         _ = subject.view
         subject.viewDidLoad()
-        mockViewModel.completion?(flight, nil)
+        mockViewModel.completion?(flights, nil)
       }
 
       it("sets the heading label") {

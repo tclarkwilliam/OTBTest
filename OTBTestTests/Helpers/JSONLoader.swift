@@ -5,7 +5,6 @@ import Foundation
 struct JSONLoader {
 
   static func load<T>(_ fileName: String, forClass: T.Type) -> JSONDictionary? {
-    // swiftlint:disable force_cast
     let testBundle = Bundle(for: forClass as! AnyClass)
     guard let path = testBundle.path(forResource: fileName, ofType: "json"),
           let data = try? Data(contentsOf: URL(fileURLWithPath: path)),

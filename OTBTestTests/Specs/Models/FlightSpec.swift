@@ -13,9 +13,7 @@ class FlightSpec: QuickSpec {
       var date: Date!
 
       beforeEach {
-        let dictionary = JSONLoader.load("flight", forClass: FlightSpec.self)!
-        let flights = dictionary["flights"] as! [JSONDictionary]
-        flight = flights.first
+        flight = ResultLoader.loadFlight(forClass: FlightSpec.self)
         subject = Flight(flight)
       }
 

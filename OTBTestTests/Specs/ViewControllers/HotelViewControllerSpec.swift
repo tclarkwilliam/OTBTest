@@ -14,7 +14,7 @@ class HotelViewControllerSpec: QuickSpec {
     describe("fetchHotel") {
 
       beforeEach {
-        dictionary = JSONLoader.load("hotel", forClass: HotelViewControllerSpec.self)
+        dictionary = ResultLoader.loadHotel(forClass: HotelViewControllerSpec.self)
         hotel = Hotel(dictionary)
         subject = StoryboardLoader.load(HotelViewController.self)
         mockViewModel = MockHotelViewModel()

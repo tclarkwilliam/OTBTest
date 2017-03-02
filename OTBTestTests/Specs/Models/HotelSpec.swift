@@ -12,7 +12,7 @@ class HotelSpec: QuickSpec {
       var dictionary: JSONDictionary!
 
       beforeEach {
-        dictionary = JSONLoader.load("hotel", forClass: HotelSpec.self)!
+        dictionary = ResultLoader.loadHotel(forClass: HotelSpec.self)
         subject = Hotel(dictionary)
       }
 
