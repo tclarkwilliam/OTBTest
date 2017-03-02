@@ -1,0 +1,148 @@
+{
+  "flights": [
+    {
+      "airline": "FastJet",
+      "departure_date": "2016-10-20T10:00:00Z",
+      "arrival_date": "2016-10-20T11:00:00Z",
+      "price": 12300,
+      "departure_airport": "London Gatwick",
+      "arrival_airport": "Barcelona"
+    },
+    {
+      "airline": "FastJet",
+      "departure_date": "2016-10-20T10:50:00Z",
+      "arrival_date": "2016-10-20T11:50:00Z",
+      "price": 13300,
+      "departure_airport": "London Gatwick",
+      "arrival_airport": "Girona"
+    },
+    {
+      "airline": "QuickJet",
+      "departure_date": "2016-10-20T22:00:00Z",
+      "arrival_date": "2016-10-21T00:00:00Z",
+      "price": 12500,
+      "departure_airport": "London Gatwick",
+      "arrival_airport": "Antalya"
+    },
+    {
+      "airline": "FastJet",
+      "departure_date": "2016-10-20T10:00:00Z",
+      "arrival_date": "2016-10-20T11:00:00Z",
+      "price": 12350,
+      "departure_airport": "London Gatwick",
+      "arrival_airport": "Barcelona"
+    },
+    {
+      "airline": "SlowJet",
+      "departure_date": "2016-10-20T10:00:00Z",
+      "arrival_date": "2016-10-20T11:00:00Z",
+      "price": 12309,
+      "departure_airport": "London Gatwick",
+      "arrival_airport": "Barcelona"
+    },
+    {
+      "airline": "FastJet",
+      "departure_date": "2016-10-20T10:00:00Z",
+      "arrival_date": "2016-10-20T11:00:00Z",
+      "price": 12300,
+      "departure_airport": "London Gatwick",
+      "arrival_airport": "Antalya"
+    },
+    {
+      "airline": "FastJet",
+      "departure_date": "2016-10-20T10:00:00Z",
+      "arrival_date": "2016-10-20T11:00:00Z",
+      "price": 12300,
+      "departure_airport": "London Gatwick",
+      "arrival_airport": "Barcelona"
+    },
+    {
+      "airline": "FastJet",
+      "departure_date": "2016-10-20T10:00:00Z",
+      "arrival_date": "2016-10-20T11:00:00Z",
+      "price": 12300,
+      "departure_airport": "London Gatwick",
+      "arrival_airport": "Barcelona"
+    },
+    {
+      "airline": "QuickJet",
+      "departure_date": "2016-10-20T10:00:00Z",
+      "arrival_date": "2016-10-20T11:00:00Z",
+      "price": 12300,
+      "departure_airport": "London Gatwick",
+      "arrival_airport": "Barcelona"
+    },
+    {
+      "airline": "FastJet",
+      "departure_date": "2016-10-20T10:00:00Z",
+      "arrival_date": "2016-10-20T11:00:00Z",
+      "price": 12300,
+      "departure_airport": "London Gatwick",
+      "arrival_airport": "Barcelona"
+    },
+    {
+      "airline": "FastJet",
+      "departure_date": "2016-10-20T10:00:00Z",
+      "arrival_date": "2016-10-20T11:00:00Z",
+      "price": 12300,
+      "departure_airport": "London Gatwick",
+      "arrival_airport": "Barcelona"
+    },
+    {
+      "airline": "FastJet",
+      "departure_date": "2016-10-20T10:00:00Z",
+      "arrival_date": "2016-10-20T11:00:00Z",
+      "price": 12300,
+      "departure_airport": "London Gatwick",
+      "arrival_airport": "Barcelona"
+    },
+    {
+      "airline": "FastJet",
+      "departure_date": "2016-10-20T10:00:00Z",
+      "arrival_date": "2016-10-20T11:00:00Z",
+      "price": 12300,
+      "departure_airport": "London Gatwick",
+      "arrival_airport": "Barcelona"
+    },
+    {
+      "airline": "QuickJet",
+      "departure_date": "2016-10-20T10:00:00Z",
+      "arrival_date": "2016-10-20T11:00:00Z",
+      "price": 12300,
+      "departure_airport": "London Gatwick",
+      "arrival_airport": "Barcelona"
+    },
+    {
+      "airline": "FastJet",
+      "departure_date": "2016-10-20T10:00:00Z",
+      "arrival_date": "2016-10-20T11:00:00Z",
+      "price": 12300,
+      "departure_airport": "London Gatwick",
+      "arrival_airport": "Barcelona"
+    },
+    {
+      "airline": "FastJet",
+      "departure_date": "2016-10-20T10:00:00Z",
+      "arrival_date": "2016-10-20T11:00:00Z",
+      "price": 12300,
+      "departure_airport": "London Gatwick",
+      "arrival_airport": "Barcelona"
+    },
+    {
+      "airline": "QuickJet",
+      "departure_date": "2016-10-20T10:00:00Z",
+      "arrival_date": "2016-10-20T11:00:00Z",
+      "price": 12300,
+      "departure_airport": "London Gatwick",
+      "arrival_airport": "Barcelona"
+    },
+    {
+      "airline": "FastJet",
+      "departure_date": "2016-10-20T10:00:00Z",
+      "arrival_date": "2016-10-20T11:00:00Z",
+      "price": 12300,
+      "departure_airport": "London Gatwick",
+      "arrival_airport": "Barcelona"
+    }
+  ]
+}
